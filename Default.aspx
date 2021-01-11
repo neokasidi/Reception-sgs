@@ -38,17 +38,17 @@
         <div id="loginMessage" class="groupMargin">Inicie sesión mediante su cuenta creada.</div>
 
         <form id="form1" runat="server">
-            <div id="error" class="fieldMargin error smallText" style="display: none;">
-                <label id="errorText" for=""></label>
+            <div id="error" class="fieldMargin error smallText" runat="server" visible="false">
+                <label id="errorText" for="">Usuario y/o contraseña incorrecta</label>
             </div>
 
             <div id="formsAuthenticationArea">
                 <div id="userNameArea">
-                    <asp:TextBox ID="userNameInput" runat="server" CssClass="text fullWidth" placeholder="alguien@example.com"></asp:TextBox>
+                    <asp:TextBox ID="userNameInput" runat="server" CssClass="text fullWidth" placeholder="Usuario"></asp:TextBox>
                 </div>
 
                 <div id="passwordArea">
-                    <asp:TextBox ID="passwordInput" runat="server" CssClass="text fullWidth" placeholder="Contraseña"></asp:TextBox>                                 
+                    <asp:TextBox ID="passwordInput" runat="server" TextMode="Password" CssClass="text fullWidth" placeholder="Contraseña"></asp:TextBox>                                 
                 </div>
                 <div id="submissionArea" class="submitMargin">
                     <asp:Button ID="submitButton" runat="server" Text="Iniciar sesión" CssClass="submit" OnClick="submitButton_Click"/>

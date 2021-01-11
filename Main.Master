@@ -77,13 +77,13 @@
           <ul class="nav">
 
               <li class="active">
-                  <a href="../examples/dashboard.html">
+                  <a href="imagenes.aspx">
                       <i class="nc-icon nc-app"></i>
-                      <p>Example 1</p>
+                      <p>Imágenes</p>
                   </a>
               </li>
               <li class="active">
-                  <a href="mantenedores/usuarios.aspx">
+                  <a href="usuarios.aspx">
                       <i class="nc-icon nc-app"></i>
                       <p>Usuarios</p>
                   </a>
@@ -197,7 +197,7 @@
         <div class="content">
           <div class="card">
             <div class="card-header">
-              <h3>Hello, world!</h3>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
             </div>
           </div>          
         </div>

@@ -11,7 +11,10 @@ namespace Reception_Sgs
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Acceso"] == null)
+            {
+                Response.Redirect("~/Default.aspx");
+            }
         }
     }
 }
